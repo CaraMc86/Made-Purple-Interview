@@ -36,7 +36,7 @@ const evenFibSum = (limit) => {
     let fibValue = fibArr[fibArr.length - 1] + fibArr[fibArr.length - 2];
 
     // check if the last value exceeds the limit and break out of the loop
-    if (fibValue > 4000000) break;
+    if (fibValue > limit) break;
     // Push the value to the array to continue the main loop - needed to generate the whole fib sequence
     fibArr.push(fibValue);
     //seperate loop to capture the even numbers
